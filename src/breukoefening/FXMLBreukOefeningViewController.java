@@ -7,29 +7,37 @@ package breukoefening;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
-import javafx.scene.control.Label;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
+import javafx.scene.shape.Line;
 
-/**
- *
- * @author vantichelen
- */
-public class FXMLBreukOefeningViewController implements Initializable {
-    
+public class FXMLBreukOefeningViewController {
+
     @FXML
-    private Label label;
-    
+    private ResourceBundle resources;
+
     @FXML
-    private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
+    private URL location;
+
+    @FXML
+    private TextField Teller;
+
+    @FXML
+    private Line Line;
+
+    @FXML
+    private TextField Noemer;
+
+    @FXML
+    private Button Button;
+
+    @FXML
+    void initialize() {
+        assert Teller != null : "fx:id=\"Teller\" was not injected: check your FXML file 'FXMLBreukOefeningView.fxml'.";
+        assert Line != null : "fx:id=\"Line\" was not injected: check your FXML file 'FXMLBreukOefeningView.fxml'.";
+        assert Noemer != null : "fx:id=\"Noemer\" was not injected: check your FXML file 'FXMLBreukOefeningView.fxml'.";
+        assert Button != null : "fx:id=\"Button\" was not injected: check your FXML file 'FXMLBreukOefeningView.fxml'.";
+
     }
-    
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
-    
 }
