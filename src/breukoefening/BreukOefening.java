@@ -48,6 +48,17 @@ public class BreukOefening {
     }
     
     
+    /**
+     * deel teller gedeeld door noemer
+     * 
+     * @return teller gedeeld door noemer
+     */
+    public double berekenBreuk () {
+        double resultaat = this.teller / this.noemer;
+        return resultaat;
+        
+    }
+    
     
     
 }
